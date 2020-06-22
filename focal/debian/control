@@ -1,4 +1,4 @@
-Source: sdformat9
+Source: sdformat10
 Standards-Version: 3.9.5
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
@@ -14,15 +14,15 @@ Build-Depends: cmake,
                ruby,
                libignition-tools-dev,
                libignition-math6-dev
-Vcs-Browser: https://bitbucket.org/osrf/sdformat9-release
-Vcs-Hg: https://bitbucket.org/osrf/sdformat9-release
+Vcs-Browser: https://github.com/ignition-release/sdformat10-release
+Vcs-Git: https://github.com/ignition-release/sdformat10-release
 Homepage: http://sdformat.org
 
-Package: libsdformat9
+Package: libsdformat10
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
-Depends:  sdformat9-sdf (>= ${source:Version}),
+Depends:  sdformat10-sdf (>= ${source:Version}),
           ${shlibs:Depends},
           ${misc:Depends}
 Multi-Arch: same
@@ -43,13 +43,13 @@ Description: Simulation Description Format (SDF) parser - Shared library
  allows conversion from previous versions. A parser is also contained within
  this package that reads SDF files and returns a C++ interface.
 
-Package: libsdformat9-dev
+Package: libsdformat10-dev
 Architecture: any
 Section: libdevel
 Depends: libtinyxml-dev,
          libignition-tools-dev,
          libignition-math6-dev,
-         libsdformat9 (= ${binary:Version}),
+         libsdformat10 (= ${binary:Version}),
          ${misc:Depends}
 Breaks: libsdformat2-dev,
         libsdformat3-dev,
@@ -69,7 +69,7 @@ Description: Simulation Description Format (SDF) parser - Development files
  allows conversion from previous versions. A parser is also contained within
  this package that reads SDF files and returns a C++ interface.
 
-Package: sdformat9-sdf
+Package: sdformat10-sdf
 Architecture: all
 Section: libdevel
 Depends: ${misc:Depends}
@@ -87,12 +87,12 @@ Description: Simulation Description Format (SDF) parser - SDF files
  This package contains SDF (Simulation Description Format) XML files needed by
  the libsdformat.
 
-Package: libsdformat9-dbg
+Package: libsdformat10-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-     libsdformat9 (= ${binary:Version}),
+     libsdformat10 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
 Description: Simulation Description Format (SDF) parser - Debugging symbols
@@ -104,7 +104,7 @@ Description: Simulation Description Format (SDF) parser - Debugging symbols
  allows conversion from previous versions. A parser is also contained within
  this package that reads SDF files and returns a C++ interface.
 
-Package: sdformat9-doc
+Package: sdformat10-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}, libjs-jquery
