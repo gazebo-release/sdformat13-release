@@ -1,3 +1,9 @@
+sdformat10 (10.0.0~pre1-1~bionic) bionic; urgency=medium
+
+  * sdformat10 10.0.0~pre1-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Mon, 22 Jun 2020 17:01:47 +0200
+
 sdformat10 (9.999.999-1~bionic) bionic; urgency=medium
 
   * Stub to be removed after first entry
