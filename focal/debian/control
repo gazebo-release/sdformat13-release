@@ -6,7 +6,7 @@ Priority: optional
 Build-Depends: cmake,
                debhelper (>= 9),
                python3,
-               libtinyxml-dev,
+               libtinyxml2-dev,
                doxygen,
                texlive-base,
                texlive-fonts-recommended,
@@ -46,7 +46,7 @@ Description: Simulation Description Format (SDF) parser - Shared library
 Package: libsdformat10-dev
 Architecture: any
 Section: libdevel
-Depends: libtinyxml-dev,
+Depends: libtinyxml2-dev,
          libignition-tools-dev,
          libignition-math6-dev,
          libsdformat10 (= ${binary:Version}),
