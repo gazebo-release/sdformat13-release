@@ -5,7 +5,7 @@ DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
 .PHONY: override_dh_auto_configure \
         override_dh_strip \
         override_dh_auto_test \
-        override_dh_auto_build-indep
+	override_dh_auto_build-indep
 
 
 %:
