@@ -1,42 +1,6 @@
-sdformat10 (10.1.0-1~focal) focal; urgency=medium
-
-  * sdformat10 10.1.0-1 release
-
- -- Nate Koenig <nate@openrobotics.org>  Tue, 15 Dec 2020 08:22:42 -0700
-
-sdformat10 (10.0.0-1~focal) focal; urgency=medium
-
-  * sdformat10 10.0.0-1 release
-
- -- Steve Peters <scpeters@openrobotics.org>  Tue, 29 Sep 2020 20:26:36 -0700
-
-sdformat10 (10.0.0~pre3-1~focal) focal; urgency=medium
-
-  * sdformat10 10.0.0~pre3-1 release
-
- -- Steve Peters <scpeters@openrobotics.org>  Mon, 14 Sep 2020 14:56:24 -0700
-
-sdformat10 (10.0.0~pre2-2~focal) focal; urgency=medium
-
-  * sdformat10 10.0.0~pre2-2 release
-
- -- Steve Peters <scpeters@openrobotics.org>  Mon, 31 Aug 2020 16:51:01 -0700
-
-sdformat10 (10.0.0~pre2-1~focal) focal; urgency=medium
-
-  * sdformat10 10.0.0~pre2-1 release
-
- -- Steve Peters <scpeters@openrobotics.org>  Tue, 18 Aug 2020 13:41:48 -0700
-
-sdformat10 (10.0.0~pre1-1~focal) focal; urgency=medium
-
-  * sdformat10 10.0.0~pre1-1 release
-
- -- Jose Luis Rivero <jrivero@osrfoundation.org>  Mon, 22 Jun 2020 17:01:48 +0200
-
-sdformat10 (9.999.999-1~focal) focal; urgency=medium
+sdformat11 (10.999.999-1~focal) focal; urgency=medium
 
   * Stub to be removed after first entry
 
- -- Jose Luis Rivero <jrivero@osrfoundation.org>  Mon, 22 Jun 2020 16:58:57 +0200
+ -- Louise Poubel <louise@openrobotics.org>  Mon, 04 Jan 2021 16:49:09 -0800
 
