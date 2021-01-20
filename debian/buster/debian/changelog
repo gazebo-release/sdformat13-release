@@ -1,6 +1,5 @@
-sdformat11 (10.999.999-1~buster) buster; urgency=medium
+sdformat11 (11.0.0~pre1-1~buster) buster; urgency=medium
 
-  * Stub to be removed after first entry
+  * sdformat11 11.0.0~pre1-1 release
 
- -- Louise Poubel <louise@openrobotics.org>  Mon, 04 Jan 2021 16:49:09 -0800
-
+ -- Addizu Z. Taddese <addisu@openrobotics.org>  Tue, 19 Jan 2021 18:29:08 -0600
