@@ -14,7 +14,7 @@ Build-Depends: cmake,
                ruby,
                libignition-tools-dev,
                libignition-math6-dev,
-               libignition-utils-dev
+               libignition-utils1-dev
 Vcs-Browser: https://github.com/ignition-release/sdformat11-release
 Vcs-Git: https://github.com/ignition-release/sdformat11-release
 Homepage: http://sdformat.org
@@ -50,7 +50,7 @@ Section: libdevel
 Depends: libtinyxml2-dev,
          libignition-tools-dev,
          libignition-math6-dev,
-         libignition-utils-dev,
+         libignition-utils1-dev,
          libsdformat11 (= ${binary:Version}),
          ${misc:Depends}
 Breaks: libsdformat2-dev,
