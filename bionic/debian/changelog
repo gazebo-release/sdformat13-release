@@ -1,23 +1,6 @@
-sdformat11 (11.0.0-1~bionic) bionic; urgency=medium
+sdformat12 (11.999.999-1~bionic) bionic; urgency=medium
 
-  * sdformat11 11.0.0-1 release
+  * Stub to be removed after first entry
 
- -- Louise Poubel <louise@openrobotics.org>  Wed, 31 Mar 2021 09:40:31 -0700
+ -- Louise Poubel <louise@openrobotics.org>  Thu, 01 Apr 2021 15:24:49 -0700
 
-sdformat11 (11.0.0~pre3-1~bionic) bionic; urgency=medium
-
-  * sdformat11 11.0.0~pre3-1 release
-
- -- Louise Poubel <louise@openrobotics.org>  Thu, 25 Mar 2021 12:08:14 -0700
-
-sdformat11 (11.0.0~pre2-1~bionic) bionic; urgency=medium
-
-  * sdformat11 11.0.0~pre2-1 release
-
- -- Steve Peters <scpeters@openrobotics.org>  Mon, 08 Feb 2021 21:31:54 -0800
-
-sdformat11 (11.0.0~pre1-1~bionic) bionic; urgency=medium
-
-  * sdformat11 11.0.0~pre1-1 release
-
- -- Addizu Z. Taddese <addisu@openrobotics.org>  Tue, 19 Jan 2021 18:29:08 -0600

@@ -24,4 +24,4 @@ override_dh_auto_test:
 	true
 
 override_dh_strip:
-	dh_strip -a --dbg-package=libsdformat11-dbg
+	dh_strip -a --dbg-package=libsdformat12-dbg

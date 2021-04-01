@@ -1,4 +1,4 @@
-Source: sdformat11
+Source: sdformat12
 Standards-Version: 3.9.5
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
@@ -15,15 +15,15 @@ Build-Depends: cmake,
                libignition-tools-dev,
                libignition-math6-dev,
                libignition-utils1-dev
-Vcs-Browser: https://github.com/ignition-release/sdformat11-release
-Vcs-Git: https://github.com/ignition-release/sdformat11-release
+Vcs-Browser: https://github.com/ignition-release/sdformat12-release
+Vcs-Git: https://github.com/ignition-release/sdformat12-release
 Homepage: http://sdformat.org
 
-Package: libsdformat11
+Package: libsdformat12
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
-Depends:  sdformat11-sdf (>= ${source:Version}),
+Depends:  sdformat12-sdf (>= ${source:Version}),
           ${shlibs:Depends},
           ${misc:Depends}
 Multi-Arch: same
@@ -44,14 +44,14 @@ Description: Simulation Description Format (SDF) parser - Shared library
  allows conversion from previous versions. A parser is also contained within
  this package that reads SDF files and returns a C++ interface.
 
-Package: libsdformat11-dev
+Package: libsdformat12-dev
 Architecture: any
 Section: libdevel
 Depends: libtinyxml2-dev,
          libignition-tools-dev,
          libignition-math6-dev,
          libignition-utils1-dev,
-         libsdformat11 (= ${binary:Version}),
+         libsdformat12 (= ${binary:Version}),
          ${misc:Depends}
 Breaks: libsdformat2-dev,
         libsdformat3-dev,
@@ -71,7 +71,7 @@ Description: Simulation Description Format (SDF) parser - Development files
  allows conversion from previous versions. A parser is also contained within
  this package that reads SDF files and returns a C++ interface.
 
-Package: sdformat11-sdf
+Package: sdformat12-sdf
 Architecture: all
 Section: libdevel
 Depends: ${misc:Depends}
@@ -89,12 +89,12 @@ Description: Simulation Description Format (SDF) parser - SDF files
  This package contains SDF (Simulation Description Format) XML files needed by
  the libsdformat.
 
-Package: libsdformat11-dbg
+Package: libsdformat12-dbg
 Architecture: any
 Section: debug
 Priority: extra
 Depends:
-     libsdformat11 (= ${binary:Version}),
+     libsdformat12 (= ${binary:Version}),
      ${misc:Depends}
 Multi-Arch: same
 Description: Simulation Description Format (SDF) parser - Debugging symbols
@@ -106,7 +106,7 @@ Description: Simulation Description Format (SDF) parser - Debugging symbols
  allows conversion from previous versions. A parser is also contained within
  this package that reads SDF files and returns a C++ interface.
 
-Package: sdformat11-doc
+Package: sdformat12-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}, libjs-jquery
