@@ -1,24 +1,6 @@
-sdformat12 (12.0.0-1~buster) buster; urgency=medium
-
-  * sdformat12 12.0.0-1 release
-
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Thu, 30 Sep 2021 17:32:22 -0500
-
-sdformat12 (12.0.0~pre2-1~buster) buster; urgency=medium
-
-  * sdformat12 12.0.0~pre2-1 release
-
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Tue, 21 Sep 2021 22:23:19 -0500
-
-sdformat12 (12.0.0~pre1-1~buster) buster; urgency=medium
-
-  * sdformat12 12.0.0~pre1-1 release
-
- -- Steve Peters <scpeters@openrobotics.org>  Mon, 20 Sep 2021 12:14:45 -0700
-
-sdformat12 (11.999.999-1~buster) buster; urgency=medium
+sdformat13 (12.999.999-1~buster) buster; urgency=medium
 
   * Stub to be removed after first entry
 
- -- Louise Poubel <louise@openrobotics.org>  Thu, 01 Apr 2021 15:24:48 -0700
+ -- Louise Poubel <louise@openrobotics.org>  Thu, 07 Oct 2021 15:42:48 -0700
 
