@@ -1,17 +1,15 @@
-
-%:
-	dh $@
-
 override_dh_auto_configure:
 	dh_auto_configure -- \
-	    -DCMAKE_BUILD_TYPE=RelWithDebInfo
-
-execute_after_dh_auto_build-indep:
-	dh_auto_build -- doc  # Generate documentation
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 override_dh_auto_test-arch:
 	LD_LIBRARY_PATH=$(CURDIR)/obj-$(DEB_HOST_GNU_TYPE)/src LC_ALL=C dh_auto_test
 
+execute_after_dh_auto_build-indep:
+	dh_auto_build -- doc  # Generate documentation
 
 override_dh_strip:
 	dh_strip -a --dbg-package=libsdformat13-dbg
+
+%:
+	dh $@
