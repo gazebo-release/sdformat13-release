@@ -1,27 +1,17 @@
-#!/usr/bin/make -f
-
-DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
-
-.PHONY: override_dh_auto_configure \
-        override_dh_strip \
-        override_dh_auto_test \
-	override_dh_auto_build-indep
-
 
 %:
-	dh $@ --parallel
-
-override_dh_auto_build-indep:
-	dh_auto_build -- doc # Generate documentation.
+	dh $@
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
 	    -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
-# Tests are broken without a installed copy of sdformat.
-# see: https://bitbucket.org/osrf/sdformat/issue/35
-override_dh_auto_test:
-	true
+execute_after_dh_auto_build-indep:
+	dh_auto_build -- doc  # Generate documentation
+
+override_dh_auto_test-arch:
+	LD_LIBRARY_PATH=$(CURDIR)/obj-$(DEB_HOST_GNU_TYPE)/src LC_ALL=C dh_auto_test
+
 
 override_dh_strip:
 	dh_strip -a --dbg-package=libsdformat13-dbg

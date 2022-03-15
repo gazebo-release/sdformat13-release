@@ -1,0 +1,3 @@
+Tests: build
+Depends: @, cmake, pkg-config, build-essential
+Restrictions: superficial
