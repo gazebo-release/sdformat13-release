@@ -2,7 +2,6 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: sdformat
 Upstream-Contact: gazebo@osrfoundation.org
 Source: http://sdformat.org/
-Files-Excluded: test/gtest
 
 Files: *
 Copyright: 2011, Nate Koenig
