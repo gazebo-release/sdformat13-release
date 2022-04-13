@@ -1,10 +1,11 @@
 Source: sdformat13
+Standards-Version: 3.9.5
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
 Build-Depends: cmake,
-               debhelper (>= 11),
-               python,
+               debhelper (>= 9),
+               python3,
                libtinyxml2-dev,
                doxygen,
                texlive-base,
@@ -13,9 +14,9 @@ Build-Depends: cmake,
                ruby,
                libignition-tools-dev,
                libignition-math7-dev,
-               libignition-utils2-dev
+               libignition-utils1-dev
+Vcs-Browser: https://github.com/ignition-release/sdformat13-release
 Vcs-Git: https://github.com/ignition-release/sdformat13-release
-Standards-Version: 4.5.1
 Homepage: http://sdformat.org
 
 Package: libsdformat13
@@ -49,7 +50,7 @@ Section: libdevel
 Depends: libtinyxml2-dev,
          libignition-tools-dev,
          libignition-math7-dev,
-         libignition-utils2-dev,
+         libignition-utils1-dev,
          libsdformat13 (= ${binary:Version}),
          ${misc:Depends}
 Breaks: libsdformat2-dev,

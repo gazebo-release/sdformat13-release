@@ -1,0 +1,49 @@
+#!/bin/sh
+# autopkgtest check: Build and run a program against glib, to verify that the
+# headers and pkg-config file are installed correctly
+# (C) 2012 Jose Luis Rivero
+# Author: Jose Luis Rivero <jrivero@osrfoundation.org>
+
+set -e
+
+WORKDIR=$(mktemp -d)
+trap "rm -rf $WORKDIR" 0 INT QUIT ABRT PIPE TERM
+cd $WORKDIR
+cat <<EOF > sdformattest.cc
+#include <sdf/sdf.hh>
+
+int main()
+{
+    sdf::SDFPtr p(new sdf::SDF());
+    sdf::init(p);
+    return 0;
+}
+EOF
+
+g++ -o sdformattest sdformattest.cc `pkg-config --cflags --libs sdformat13`
+echo "build pkgconfig: OK"
+[ -x sdformattest ]
+./sdformattest
+echo "run pkgconfig: OK"
+
+# 2. CMAKE
+cat <<EOF > CMakeLists.txt
+cmake_minimum_required(VERSION 3.5)
+
+project(sdf_test VERSION 1.0.0)
+
+find_package(sdformat13 13.0.0 REQUIRED)
+add_executable(sdftest sdformattest.cc)
+target_link_libraries(sdftest
+   PUBLIC
+     sdformat13::sdformat13)
+EOF
+
+cmake .
+echo "configure cmake with component: OK"
+make
+echo "build cmake component:OK"
+[ -x sdftest ]
+./sdftest
+echo "run: OK"
+
