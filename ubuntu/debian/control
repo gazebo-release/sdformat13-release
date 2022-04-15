@@ -11,7 +11,7 @@ Build-Depends: cmake,
                texlive-fonts-recommended,
                texlive-latex-extra,
                ruby,
-               libignition-tools-dev,
+               libignition-tools2-dev,
                libignition-math7-dev,
                libignition-utils2-dev
 Vcs-Git: https://github.com/ignition-release/sdformat13-release
@@ -47,7 +47,7 @@ Package: libsdformat13-dev
 Architecture: any
 Section: libdevel
 Depends: libtinyxml2-dev,
-         libignition-tools-dev,
+         libignition-tools2-dev,
          libignition-math7-dev,
          libignition-utils2-dev,
          libsdformat13 (= ${binary:Version}),
