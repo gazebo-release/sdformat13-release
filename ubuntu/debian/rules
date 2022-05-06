@@ -1,10 +1,15 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
+export PYBUILD_NAME=sdformat13
+
 override_dh_auto_configure:
 	dh_auto_configure -- \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DSKIP_usd=true
+  -DSKIP_usd=true \
+  -DUSE_SYSTEM_PATHS_FOR_PYTHON_INSTALLATION=ON \
+  -DUSE_DIST_PACKAGES_FOR_PYTHON=ON
+
 
 override_dh_auto_test-arch:
 	LD_LIBRARY_PATH=$(CURDIR)/obj-$(DEB_HOST_GNU_TYPE)/src LC_ALL=C dh_auto_test
@@ -16,4 +21,4 @@ override_dh_strip:
 	dh_strip -a --dbg-package=libsdformat13-dbg
 
 %:
-	dh $@
+	dh $@ --with-python3
