@@ -6,6 +6,7 @@ export PYBUILD_NAME=sdformat13
 override_dh_auto_configure:
 	dh_auto_configure -- \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+  -DSKIP_usd=true \
   -DUSE_SYSTEM_PATHS_FOR_PYTHON_INSTALLATION=ON \
   -DUSE_DIST_PACKAGES_FOR_PYTHON=ON
 
