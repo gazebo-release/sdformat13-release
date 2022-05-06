@@ -15,7 +15,9 @@ Build-Depends: cmake,
                ruby,
                libignition-tools2-dev,
                libignition-math7-dev,
+               libignition-utils2-cli-dev,
                libignition-utils2-dev
+Vcs-Browser: https://github.com/ignition-release/sdformat13-release
 Vcs-Git: https://github.com/ignition-release/sdformat13-release
 Standards-Version: 4.5.1
 Homepage: http://sdformat.org
@@ -51,6 +53,7 @@ Section: libdevel
 Depends: libtinyxml2-dev,
          libignition-tools2-dev,
          libignition-math7-dev,
+         libignition-utils2-cli-dev,
          libignition-utils2-dev,
          libsdformat13 (= ${binary:Version}),
          ${misc:Depends}
