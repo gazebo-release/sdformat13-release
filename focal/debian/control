@@ -98,6 +98,7 @@ Package: python3-sdformat13
 Architecture: any
 Depends: ${misc:Depends},
          python3-ignition-math7,
+         libsdformat13 (= ${binary:Version}),
          ${python3:Depends}
 Enhances: libsdformat13
 Description: Simulation Description Format (SDF) parser - SDF files
