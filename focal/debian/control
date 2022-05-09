@@ -5,7 +5,7 @@ Section: science
 Priority: optional
 Build-Depends: cmake,
                debhelper (>= 9),
-               dh-python3,
+               dh-python,
                libtinyxml2-dev,
                doxygen,
                texlive-base,
@@ -98,6 +98,7 @@ Package: python3-sdformat13
 Architecture: any
 Depends: ${misc:Depends},
          python3-ignition-math7,
+         libsdformat13 (= ${binary:Version}),
          ${python3:Depends}
 Enhances: libsdformat13
 Description: Simulation Description Format (SDF) parser - SDF files
@@ -107,7 +108,7 @@ Description: Simulation Description Format (SDF) parser - SDF files
  or dynamic objects, and articulated robots with various sensors, and acutators.
  The format of SDF is also described by XML, which facilitates updates and
  allows conversion from previous versions. A parser is also contained within
- this package that reads SDF files and returns a C interface.
+ this package that reads SDF files and returns a C++ interface.
  .
  This package contains the Python bindings for SDFormat
 
