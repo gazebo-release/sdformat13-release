@@ -13,11 +13,11 @@ Build-Depends: cmake,
                python3-pybind11,
                python3-dev,
                ruby,
-               libignition-tools2-dev,
-               libignition-math7-dev,
-               python3-ignition-math7,
-               libignition-utils2-cli-dev,
-               libignition-utils2-dev
+               libgz-tools2-dev,
+               libgz-math7-dev,
+               python3-gz-math7,
+               libgz-utils2-cli-dev,
+               libgz-utils2-dev
 Vcs-Browser: https://github.com/gazebo-release/sdformat13-release
 Vcs-Git: https://github.com/gazebo-release/sdformat13-release
 Standards-Version: 4.5.1
@@ -52,10 +52,10 @@ Package: libsdformat13-dev
 Architecture: any
 Section: libdevel
 Depends: libtinyxml2-dev,
-         libignition-tools2-dev,
-         libignition-math7-dev,
-         libignition-utils2-cli-dev,
-         libignition-utils2-dev,
+         libgz-tools2-dev,
+         libgz-math7-dev,
+         libgz-utils2-cli-dev,
+         libgz-utils2-dev,
          libsdformat13 (= ${binary:Version}),
          ${misc:Depends}
 Breaks: libsdformat2-dev,
@@ -97,7 +97,7 @@ Description: Simulation Description Format (SDF) parser - SDF files
 Package: python3-sdformat13
 Architecture: any
 Depends: ${misc:Depends},
-         python3-ignition-math7,
+         python3-gz-math7,
          ${python3:Depends}
 Enhances: libsdformat13
 Description: Simulation Description Format (SDF) parser - SDF files
