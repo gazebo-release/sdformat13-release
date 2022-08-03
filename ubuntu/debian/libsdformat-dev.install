@@ -4,3 +4,4 @@ usr/lib/*/pkgconfig/*.pc
 usr/lib/*/cmake/sdformat13*/*
 usr/lib/ruby/*/*.rb
 usr/share/*/*.yaml
+usr/share/gz/*/*
