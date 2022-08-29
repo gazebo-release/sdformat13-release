@@ -1,1 +1,4 @@
 usr/lib/*/*.so.*
+usr/lib/ruby/*/*.rb
+usr/share/*/*.yaml
+usr/share/gz/*/*
