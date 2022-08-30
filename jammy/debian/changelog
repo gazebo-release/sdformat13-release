@@ -1,3 +1,9 @@
+sdformat13 (13.0.0~pre1-1~jammy) jammy; urgency=medium
+
+  * sdformat13 13.0.0~pre1-1 release
+
+ -- Louise Poubel <louise@openrobotics.org>  Tue, 30 Aug 2022 16:54:27 -0700
+
 sdformat13 (12.999.999-1~jammy) jammy; urgency=medium
 
   * First release for jammy
