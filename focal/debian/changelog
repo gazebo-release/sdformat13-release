@@ -1,3 +1,9 @@
+sdformat13 (13.0.0-1~focal) focal; urgency=medium
+
+  * sdformat13 13.0.0-1 release
+
+ -- Nate Koenig <nate@osrfoundation.org>  Mon, 26 Sep 2022 08:51:56 -0700
+
 sdformat13 (13.0.0~pre2-1~focal) focal; urgency=medium
 
   * sdformat13 13.0.0~pre2-1 release
