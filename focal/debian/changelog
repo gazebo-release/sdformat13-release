@@ -1,3 +1,9 @@
+sdformat13 (13.4.1-1~focal) focal; urgency=medium
+
+  * sdformat13 13.4.1-1 release
+
+ -- Ian Chen <ichen@openrobotics.org>  Thu, 09 Mar 2023 01:05:21 +0000
+
 sdformat13 (13.4.0-1~focal) focal; urgency=medium
 
   * sdformat13 13.4.0-1 release
