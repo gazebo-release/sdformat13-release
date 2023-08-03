@@ -97,6 +97,7 @@ Description: Simulation Description Format (SDF) parser - SDF files
 Package: python3-sdformat13
 Architecture: any
 Depends: ${misc:Depends},
+         ${shlibs:Depends},
          python3-gz-math7,
          ${python3:Depends}
 Enhances: libsdformat13
