@@ -1,3 +1,9 @@
+sdformat13 (13.9.0-1~focal) focal; urgency=medium
+
+  * sdformat13 13.9.0-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Thu, 07 Nov 2024 18:24:15 +0100
+
 sdformat13 (13.8.0-1~focal) focal; urgency=medium
 
   * sdformat13 13.8.0-1 release
